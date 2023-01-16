@@ -2,7 +2,7 @@
 This is a set of tool created to make less painfull work with new UO anims.
 It is in very early stage and needs many improvements, but u can already do many awsome anims with this in few minutes.
 
-I am not programmer. I did this just thx to openai chat. Don't expect a clean code or best performance. Any suggestion or issue just create an issue on github.
+I am not programmer. I did this just thx to openai chat. Don't expect a clean code, smart code or best performance. Any suggestion or issue just create an issue on github.
 
 Thx to @prapilk for helping me with the axis part.
 
