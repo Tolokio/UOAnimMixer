@@ -1,4 +1,4 @@
-#animmixer3->This code mix two wereables. To run this u need A folder with the body frames, and two folders with the two wereables.
+
 import os
 from PIL import Image
 
@@ -36,16 +36,7 @@ def insert_image(main_image_path, insert_image_path, insert_image_path2, save_pa
         if (0 <= xx <= int(insert_image.width - 1)) and (0 <= yy <= int(insert_image.height - 1)):
             insert_image.putpixel((int(xx), int(yy)), (0, 0, 0, 0))
 
-  # Guarda la imagen de destino
   insert_image.save(save_path)
-  
-  
-  #print(f"COLOCADO, {xx} {yy}")
-
-  # inserta la imagen en la imagen principal
-  #main_image.paste(insert_image, (x, y))
-  #insert_image.alpha_composite(insert_image2, (x3, y3))
-  # guarda la imagen resultante
 
 
 print("pasa inicio")
@@ -53,14 +44,12 @@ print("pasa inicio")
 for file in files:
     times +=1
     #print("buscando file")
-    if file.endswith(".png"): #si es un png
-        #seteamos variables necesarias.
+    if file.endswith(".png"): #only if png
         search_framepbmp = file  # eg "1_1.bmp" or "0_4.bmp"
         search_framep= search_framepbmp.replace(".png", "") # eg "1_1" or "0_4"
         search_frame= search_framep.replace("_", ":") # eg "1:1" or "0:4"
-        #print(f"search_frame, {search_frame} {search_framepbmp} {search_framep}")
         
-		# buscamos posiciones del TEMPLATE
+	# buscamos posiciones del TEMPLATE
         with open(r'D:\uomixer\TEMPLATE\liste.txt', 'r') as posicionest:
             for i, line in enumerate(posicionest):
                 if search_frame in line:
@@ -108,20 +97,17 @@ for file in files:
         #gets position of second wereable
         X2= int(Xt) - int(Xww)
         Y2= -int(Yww) + int(Yt)
-
-
-        
-        print(f"X Y, {X} {Y}")                  
+                
         #llamamos a la función para insertar con los datos q tenemos.
-        WEREABLE = os.path.join(folderOn, search_framepbmp)  # ruta al primer wereable.
-        WEREABLE2 = os.path.join(folderOn2, search_framepbmp)  # ruta al segundo wereable
-        TEMPLATE = os.path.join(folderIn, search_framepbmp)  # ruta a la carpeta + archivo.bmp DONDE va  ser insertado
-        OUTPUT = os.path.join(folderOut, search_framepbmp)  # ruta a la carpeta + archivo.bmp donde se va a GUARDAR.
+        WEREABLE = os.path.join(folderOn, search_framepbmp)
+        WEREABLE2 = os.path.join(folderOn2, search_framepbmp)
+        TEMPLATE = os.path.join(folderIn, search_framepbmp) 
+        OUTPUT = os.path.join(folderOut, search_framepbmp)  
         
         print(f"Processing {WEREABLE}/1050")
         print(f"Processing {times}/1050")
         
-        insert_image(TEMPLATE, WEREABLE, WEREABLE2, OUTPUT, X, Y, X2, Y2) #funcion para insertar imagen
+        insert_image(TEMPLATE, WEREABLE, WEREABLE2, OUTPUT, X, Y, X2, Y2) 
         
         #break
 			
