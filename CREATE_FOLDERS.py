@@ -13,4 +13,8 @@ if not os.path.exists("AONEFORALL"):
     os.makedirs("AONEFORALL")
 if not os.path.exists("ACONVERTER"):
     os.makedirs("ACONVERTER")
+#if not os.path.exists("AMASSEXPORTER"):
+#    os.makedirs("AMASSEXPORTER")
+#if not os.path.exists("AFEWFORALL"):
+#    os.makedirs("AFEWFORALL")
 
