@@ -9,8 +9,8 @@ if not os.path.exists("WEREABLE"):
     os.makedirs("WEREABLE")
 if not os.path.exists("WEREABLE2"):
     os.makedirs("WEREABLE2")
-if not os.path.exists("AONEFORALL"):
-    os.makedirs("AONEFORALL")
+#if not os.path.exists("AONEFORALL"):
+#    os.makedirs("AONEFORALL")
 if not os.path.exists("ACONVERTER"):
     os.makedirs("ACONVERTER")
 #if not os.path.exists("AMASSEXPORTER"):
