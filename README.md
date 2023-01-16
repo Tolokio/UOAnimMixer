@@ -16,7 +16,8 @@ NOTES:
 -Converters will set background to black and transparent.
 -There are more features under development, will be added once they are ended,fixed or improved to be more friendly with new users.
 ```
-
+[HELP WANTED]
+As I am not programer there are things I dont know how to do and dont have enought time to study for it. Check issues if u want to help with any.
 
 
 
