@@ -19,5 +19,33 @@ NOTES:
 [HELP WANTED]
 As I am not programer there are things I dont know how to do and dont have enought time to study for it. Check issues if u want to help with any.
 
+[How to use]
+
+-Install python and allow it to work on cmd. Look for a tutorial on internet. Einfach.
+-Dclick on User_interface.py (if u folders are not created use "create folders" to set up folders.
+
+Now u got a folder with many folders and many .py files. Each .py file need will use certain folders.
+
+Template + Wereable.py-> Will paste frames from "WEREABLE" into frames from "TEMPLATE", and then will be saved as .png at OUTPUT
+
+WEREABLE + WEREABLE2.py-> Will paste folder WEREABLE2 into WEREABLE1. For example if we want to merge helmet + bone helmet folders should be filled like this:
+              TEMPLATE-> c_man or c_woman frames + liste.txt.
+              WEREABLE-> helmet frames + liste.txt
+              Wereable2-> Bone helmet + liste.txt
+              Output->Where result will be saved.
+
+WEREABLE - WEREABLE2.py-> Will remove the pixels that are not transparent from WEREABLE2 at WEREABLE folder. For example u can use a helmet to cut the head of c_man animation on all frames:
+                Template->C_man + liste.txt
+                WEREABLE-> c_man + list.txt
+                WEREABLE2-> Bone helmet + list.txt
+                OUTPUT-> U will get c_man animation but wihout head.
+
+PNGTOBMP.py
+BMPTOPNG.py-> This both uses only one folder. It will set black background on all frames, and will remove old files. Just but any .bmp or .png at ACONVERTER folder and use proper converter.
+
+CreateFolders.py-> This will create any missing folder. IT is usefull as many times it is better to rename Folders than moving them to another folder.
+
+
+                
 
 
