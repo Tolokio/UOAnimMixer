@@ -6,10 +6,10 @@ def ejecutar_archivo1():
     os.system("ANIMIXER_TEMPLATE+WEREABLE.py")
     
 def ejecutar_archivo2():
-    os.system("python archivo2.py")
+    os.system("ANIMIXER_wereable+wereable.py")
     
 def ejecutar_archivo3():
-    os.system("python archivo2.py")
+    os.system("ANIMREMOVER_wereable-wereable.py")
     
 def ejecutar_archivo4():
     os.system("python archivo2.py")
@@ -28,7 +28,7 @@ def ejecutar_archivo8():
 
 
 def salir():
-    salir = messagebox.askyesno("Salir", "¿Estás seguro de que deseas salir?")
+    salir = messagebox.askyesno("Quit", "Sure?")
     if salir:
         ventana.destroy()
 
