@@ -2,7 +2,7 @@
 This is a set of tool created to make less painful to work with Ultima Online Anims.
 
 It is very recommended to work using User_Interface.py or idle as u will be able to check logs and see whats is going wrong.
-First of all is to create folders. So dclick on create folders file or ysing the interface.
+First of all is to create folders. So dclick on create folders file or by the user_interface.py
 
 The rest of the tools are very intuitive, just fill proper folders with proper anims and use the proper tool.
 
