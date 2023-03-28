@@ -1,3 +1,6 @@
+THIS VERSION IS NOT SUPPORTED ANYMORE. There is a new version that works with bmps.
+
+
 
 This is a set of tool created to make less painful to work with Ultima Online Anims.
 
